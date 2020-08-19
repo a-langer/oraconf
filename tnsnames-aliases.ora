@@ -1,0 +1,13 @@
+multi_a1, multi_a2, multi_a2.world, multi_a2.global.coms =
+  (DESCRIPTION=
+    (ADDRESS_LIST=
+      (ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521))
+      (ADDRESS=(PROTOCOL=TCP)(HOST=localmirror)(PORT=1521))
+    )
+    (CONNECT_DATA=
+      (SERVER=DEDICATED)
+      (FAILOVER=TRUE)
+      (SERVICE_NAME=multi.global.worlds)
+    )
+  )
+
