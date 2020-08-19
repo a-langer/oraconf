@@ -26,7 +26,7 @@ Add this dependency to your `pom.xml` to reference the library:
 <dependency>
     <groupId>com.github.a-langer</groupId>
     <artifactId>oraconf</artifactId>
-    <version>1.0.0</version>
+    <version>0.0.1</version>
 </dependency>
 ```
 
@@ -73,10 +73,10 @@ cFile = new Parser(cFile).parse();
 System.out.println(cFile.findParameter("Area52").toJson());
 ```
 
-Export to JSON from command line:
+Export to JSON from command line using [oraconf-*.jar][8]:
 
 ```bash
-java -jar ./oraconf*.jar /etc/tns_admin/tnsnames.ora > tnsnames.json
+java -jar ./oraconf-*.jar /etc/tns_admin/tnsnames.ora > tnsnames.json
 ```
 
 # Related resources
@@ -92,6 +92,7 @@ java -jar ./oraconf*.jar /etc/tns_admin/tnsnames.ora > tnsnames.json
 [5]: https://github.com/caot/ojdbc6-11.2.0.2.0.src/blob/master/src/oracle/net/jdbc/nl/NLParamParser.java 
 [6]: https://mvnrepository.com/artifact/com.oracle.database.jdbc/ojdbc8
 [7]: https://www.sql.ru/forum/598369/jdbc-poluchit-spisok-baz?mid=6223824#6223824
+[8]: https://github.com/a-langer/oraconf/releases
 
 
 
