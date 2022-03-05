@@ -11,6 +11,7 @@ public interface ConfigurationParameter {
      * 
      * @param p
      *            a new Parameter
+     * 
      * @return true if correctly added
      */
     boolean addValue(ConfigurationParameter p);
@@ -31,6 +32,7 @@ public interface ConfigurationParameter {
      * Returns an iterator for the list of parameters
      * 
      * @example for(Parameter p : params) { do something with p }
+     * 
      * @return an iterator over the list of parameters
      */
     Iterable<ConfigurationParameter> getValues();
@@ -40,6 +42,7 @@ public interface ConfigurationParameter {
      * 
      * @param p
      *            Parameter to remove
+     * 
      * @return true if the item was removed
      */
     boolean removeValue(ConfigurationParameter p);

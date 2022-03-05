@@ -78,12 +78,16 @@ public class Parser {
     }
 
     /**
-     * Checks if the current state indicates that we are inside of a comment. Note that # is treated as a comment only
-     * when being at the beginning of the line. Comments can be included using the pound sign # at the beginning of a
-     * line. Anything following the sign to the end of the line is considered a comment. Note that (OBJECT=\#123) is a
+     * Checks if the current state indicates that we are inside of a comment. Note
+     * that # is treated as a comment only
+     * when being at the beginning of the line. Comments can be included using the
+     * pound sign # at the beginning of a
+     * line. Anything following the sign to the end of the line is considered a
+     * comment. Note that (OBJECT=\#123) is a
      * valid entry and not a comment.
      * 
      * @param c
+     * 
      * @return
      */
     private boolean isComment(char c) {
