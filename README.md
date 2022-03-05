@@ -1,14 +1,14 @@
+# Parser for tnsnames.ora files
+
 [![Build Status](https://travis-ci.org/a-langer/oraconf.svg?branch=master)](https://travis-ci.org/a-langer/oraconf)
 [![license](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/a-langer/oraconf/blob/master/LICENSE)
 [![Maven JitPack](https://img.shields.io/github/tag/a-langer/oraconf.svg?label=maven)](https://jitpack.io/#a-langer/oraconf)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.a-langer/oraconf/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.a-langer/oraconf)
 
-# Parser for tnsnames.ora files
-
 Library `oraconf-<version>.jar` enables working with files in Oracle configuration format as described by [documentation][1]. 
 This project is a fork of [oraconf][2].
 
-# Supported features:
+## Supported features
 
 * Parsing tnsnames.ora files.
 * Query a parsed file to retrieve a specific entry.
@@ -18,7 +18,7 @@ This project is a fork of [oraconf][2].
 * Export to JSON format (including command line).
 * No dependency on third-party libraries.
 
-# Getting the library using Maven
+## Getting the library using Maven
 
 Add this dependency to your `pom.xml` to reference the library:
 
@@ -30,7 +30,7 @@ Add this dependency to your `pom.xml` to reference the library:
 </dependency>
 ```
 
-# Usage
+## Usage
 
 Print all entries in a test.ora tnsnames file:
 
@@ -79,7 +79,7 @@ Export to JSON from command line using [oraconf-*.jar][8]:
 java -jar ./oraconf-*.jar /etc/tns_admin/tnsnames.ora > tnsnames.json
 ```
 
-# Related resources
+## Related resources
 * [oraconf][2] - Original project by 'mulander' on bitbucket.
 * [orafile][3] - Java for dealing with Oracle SQL*Net .ora files.
 * [oracle.net.nl.NLParamParser][5] - Class from [oracle jdbc driver][6] (see [example][7]).
@@ -93,7 +93,3 @@ java -jar ./oraconf-*.jar /etc/tns_admin/tnsnames.ora > tnsnames.json
 [6]: https://mvnrepository.com/artifact/com.oracle.database.jdbc/ojdbc8
 [7]: https://www.sql.ru/forum/598369/jdbc-poluchit-spisok-baz?mid=6223824#6223824
 [8]: https://github.com/a-langer/oraconf/releases
-
-
-
-
